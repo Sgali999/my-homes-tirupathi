@@ -415,31 +415,33 @@ footer {
   }
 }
 /* =====================================================
-   SCROLL HINT (CLEAR & RECOGNIZABLE)
+   SCROLL HINT – BIG & CLEAR
 ===================================================== */
 .scroll-hint {
   position: absolute;
-  bottom: 24px;              /* slightly higher */
+  bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;                 /* more separation */
-  color: rgba(255,255,255,0.95);
-  font-size: 1rem;           /* 🔥 bigger text */
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;        /* 🔥 BIGGER TEXT */
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .scroll-hint svg {
-  width: 32px;               /* 🔥 bigger arrow */
-  height: 32px;
+  width: 44px;              /* 🔥 BIGGER ARROW */
+  height: 44px;
   fill: currentColor;
   animation: bounceDown 1.4s infinite ease-in-out;
 }
-
 @keyframes bounceDown {
   0%   { transform: translateY(0); opacity: 0.6; }
   50%  { transform: translateY(6px); opacity: 1; }
