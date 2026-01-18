@@ -419,22 +419,23 @@ footer {
 ===================================================== */
 .scroll-hint {
   position: absolute;
-  bottom: 18px;
+  bottom: 24px;              /* slightly higher */
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  color: rgba(255,255,255,0.85);
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
+  gap: 10px;                 /* more separation */
+  color: rgba(255,255,255,0.95);
+  font-size: 1rem;           /* 🔥 bigger text */
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 
 .scroll-hint svg {
-  width: 22px;
-  height: 22px;
+  width: 32px;               /* 🔥 bigger arrow */
+  height: 32px;
   fill: currentColor;
   animation: bounceDown 1.4s infinite ease-in-out;
 }
