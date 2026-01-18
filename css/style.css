@@ -372,3 +372,45 @@ footer {
     height: 200px;
   }
 }
+
+/* =====================================================
+   SCROLL DOWN INDICATOR (SUBTLE & PREMIUM)
+===================================================== */
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  z-index: 3;
+}
+
+.scroll-down-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 6px;
+  background: #fff;
+  border-radius: 2px;
+  animation: scrollDown 1.6s infinite ease-in-out;
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 14px);
+  }
+}
