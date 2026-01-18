@@ -415,11 +415,11 @@ footer {
   }
 }
 /* =====================================================
-   SCROLL HINT – BIG & CLEAR
+   SCROLL HINT – EXTRA LARGE & OBVIOUS
 ===================================================== */
 .scroll-hint {
   position: absolute;
-  bottom: 28px;
+  bottom: 36px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -427,22 +427,21 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.2rem;        /* 🔥 BIGGER TEXT */
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  color: #ffffff;
+  font-size: 1.6rem;        /* 🔥 VERY BIG TEXT */
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .scroll-hint svg {
-  width: 44px;              /* 🔥 BIGGER ARROW */
-  height: 44px;
+  width: 64px;              /* 🔥 VERY BIG ARROW */
+  height: 64px;
   fill: currentColor;
-  animation: bounceDown 1.4s infinite ease-in-out;
+  animation: bounceDown 1.3s infinite ease-in-out;
 }
-
 /* =====================================================
    MOBILE HERO GAP FIX (FINAL)
 ===================================================== */
