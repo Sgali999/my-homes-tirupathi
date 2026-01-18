@@ -38,16 +38,18 @@
     </p>
     <a class="btn" href="projects.html">Explore Our Work</a>
   </div>
-  <div class="scroll-hint">
-  <span>Scroll</span>
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M12 16l-6-6h12z"></path>
-  </svg>
+
+  <!-- SCROLL DOWN HINT (CLICKABLE) -->
+  <div class="scroll-hint" onclick="scrollToStrength()">
+    <span>SCROLL</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 16l-6-6h12z"></path>
+    </svg>
   </div>
 </section>
 
 <!-- STATS SECTION -->
-<section class="section">
+<section class="section" id="strength">
   <h2>Our Strength in Numbers</h2>
   <div class="stats">
     <div class="stat">
@@ -145,6 +147,19 @@
 <footer>
   © 2026 My Homes Tirupathi
 </footer>
+
+<!-- SAFE, MINIMAL JS FOR SCROLL -->
+<script>
+  function scrollToStrength() {
+    const target = document.getElementById("strength");
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }
+</script>
 
 </body>
 </html>
