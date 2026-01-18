@@ -325,25 +325,37 @@ footer {
 }
 
 /* =====================================================
-   MOBILE RESPONSIVE
+   MOBILE RESPONSIVE (FINAL FIX)
 ===================================================== */
 @media (max-width: 768px) {
+
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  /* HERO: reduce height AND remove vertical centering */
+  .hero {
+    min-height: 58vh;        /* tighter but still premium */
+    align-items: flex-start; /* 🔑 KEY FIX */
+  }
+
   .hero h1 {
-    font-size: 2.1rem;
+    font-size: 2.05rem;
   }
 
   .section {
     padding: 40px 20px;
   }
 
+  /* Reduce gap after hero */
+  .section:first-of-type {
+    padding-top: 24px;
+  }
+
   .section h2 {
     font-size: 1.9rem;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .spec-row {
