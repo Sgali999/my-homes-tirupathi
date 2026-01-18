@@ -437,10 +437,13 @@ footer {
 }
 
 .scroll-hint svg {
-  width: 64px;              /* 🔥 VERY BIG ARROW */
-  height: 64px;
-  fill: currentColor;
-  animation: bounceDown 1.3s infinite ease-in-out;
+  animation: bounceDown 1.4s infinite ease-in-out,
+             pulseColor 2s infinite alternate;
+}
+
+@keyframes pulseColor {
+  from { color: #ffffff; }
+  to   { color: #ffb703; }
 }
 /* =====================================================
    MOBILE HERO GAP FIX (FINAL)
