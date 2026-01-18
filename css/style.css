@@ -444,3 +444,56 @@ footer {
   50%  { transform: translateY(6px); opacity: 1; }
   100% { transform: translateY(0); opacity: 0.6; }
 }
+
+/* =====================================================
+   MOBILE HERO GAP FIX (FINAL)
+===================================================== */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* 🔥 THIS IS THE KEY */
+  .hero {
+    height: auto;
+    max-height: 420px;      /* caps the hero */
+    padding-bottom: 0;     /* removes empty dark area */
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;  /* controlled spacing for CTA */
+  }
+
+  .hero h1 {
+    font-size: 2.05rem;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section:first-of-type {
+    padding-top: 16px;     /* pulls section closer */
+  }
+
+  .section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 26px;
+  }
+
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .spec-title {
+    font-size: 1.05rem;
+  }
+
+  .project-item img {
+    height: 200px;
+  }
+}
