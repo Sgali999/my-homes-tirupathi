@@ -442,11 +442,6 @@ footer {
   fill: currentColor;
   animation: bounceDown 1.4s infinite ease-in-out;
 }
-@keyframes bounceDown {
-  0%   { transform: translateY(0); opacity: 0.6; }
-  50%  { transform: translateY(6px); opacity: 1; }
-  100% { transform: translateY(0); opacity: 0.6; }
-}
 
 /* =====================================================
    MOBILE HERO GAP FIX (FINAL)
